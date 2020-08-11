@@ -38,7 +38,38 @@
         </ul>
     </div>
 </nav> -->
+<nav role='navigation'>
+    <div id="menuToggle">
+      <input type="checkbox" />
 
+      <!-- hamburger -->
+      <span></span>
+      <span></span>
+      <span></span>
+      
+      <div id="leftmenu">
+        <div class="sidebar-left__logo"><img src="./images/CircleITLogo.svg" alt="CircleIT Logo" /></div>
+        <div class="sidebar-left__image"><img src="./images/ManwBoxes.png" alt="Guy with cart" /></div>
+      </div>
+      <div id="menu">
+          <div class="sidebar__section">
+              <img src="./images/icon-sustainable.svg" alt="sustainable icon">
+              <div class="sidebar__headline"><a href="/sustainable">Sustainable</a></div>
+              <div class="sidebar__body">Giving used devices a new purpose</div>
+          </div>
+          <div class="sidebar__section">
+              <img src="./images/icon-lock.svg" alt="secure icon">
+              <div class="sidebar__headline"><a href="/secure">Secure</a></div>
+              <div class="sidebar__body">Guardians of your data</div>
+          </div>
+          <div class="sidebar__section">
+              <img src="./images/icon-read.svg" alt="Simple icon">
+              <div class="sidebar__headline"><a href="/simple">Simple</a></div>
+              <div class="sidebar__body">Now the right thing is the easy thing</div>
+          </div>
+      </div>
+    </div>
+  </nav>
 <header style="position:relative;">
     <div class="container parallax darken">
         <img src="./images/ravengard_map.jpg" />
@@ -90,50 +121,13 @@
    </div>
 </div>
 
-
-
-
-<nav role='navigation'>
-    <div id="menuToggle">
-      <input type="checkbox" />
-
-      <!-- hamburger -->
-      <span></span>
-      <span></span>
-      <span></span>
-      
-      <div id="leftmenu">
-        <div class="sidebar-left__logo"><img src="./images/CircleITLogo.svg" alt="CircleIT Logo" /></div>
-        <div class="sidebar-left__image"><img src="./images/ManwBoxes.png" alt="Guy with cart" /></div>
-      </div>
-      <div id="menu">
-          <div class="sidebar__section">
-              <img src="./images/icon-sustainable.svg" alt="sustainable icon">
-              <div class="sidebar__headline"><a href="/sustainable">Sustainable</a></div>
-              <div class="sidebar__body">Giving used devices a new purpose</div>
-          </div>
-          <div class="sidebar__section">
-              <img src="./images/icon-lock.svg" alt="secure icon">
-              <div class="sidebar__headline"><a href="/secure">Secure</a></div>
-              <div class="sidebar__body">Guardians of your data</div>
-          </div>
-          <div class="sidebar__section">
-              <img src="./images/icon-read.svg" alt="Simple icon">
-              <div class="sidebar__headline"><a href="/simple">Simple</a></div>
-              <div class="sidebar__body">Now the right thing is the easy thing</div>
-          </div>
-      </div>
-    </div>
-  </nav>
-
-
-
 </body>
 
 
 <style>
 
-body { overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */}
+html {width:100%; height:100%; overflow:hidden;}
+body { overflow-y: auto; width:100%; height:100%; /* needed because hiding the menu on the right side is not perfect,  */}
 #menuToggle { display: block; position: absolute; top: -2px; right: 10px; width:100%; padding-right:100px; padding-top:60px; text-align:-webkit-right; z-index: 1; -webkit-user-select: none; user-select: none; }
 #menuToggle input { display: block; position: absolute; width: 40px; height: 32px; top: 50px; left: auto; right:92px; cursor: pointer; opacity: 0; z-index: 2; -webkit-touch-callout: none; }
 #menuToggle span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #cdcdcd; border-radius: 3px; z-index: 1; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; }
