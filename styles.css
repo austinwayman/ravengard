@@ -12,7 +12,7 @@ img { width: 100%; height: auto; }
 #splash h1 {font-family: 'Grenze Gotisch', cursive;}
 
 /* Mobile nav */
-/* #menu{position:absolute;width:100%;margin:-100px 0 0 -50px;padding:20px 50px;padding-top:125px;background:rgb(237,237,237,0.7);list-style-type:none;-webkit-font-smoothing:antialiased;transform-origin:0 0;transform:translate(-100%,0);transition:transform .5s cubic-bezier(.77,.2,.05,1)}
+#menu{position:absolute;width:100%;margin:-100px 0 0 -50px;padding:20px 50px;padding-top:125px;background:rgb(237,237,237,0.7);list-style-type:none;-webkit-font-smoothing:antialiased;transform-origin:0 0;transform:translate(-100%,0);transition:transform .5s cubic-bezier(.77,.2,.05,1)}
 #menu li{padding:10px 0;font-size:22px}
 #menuToggle {display:block;position:relative;margin:14px; z-index:1;-webkit-user-select:none;user-select:none}
 #menuToggle a{text-decoration:none;color:#232323;transition:color .3s ease}
@@ -24,7 +24,7 @@ img { width: 100%; height: auto; }
 #menuToggle input:checked~span{opacity:1;transform:rotate(45deg) translate(-2px,-1px);background:#232323}
 #menuToggle input:checked~span:nth-last-child(3){opacity:0;transform:rotate(0) scale(.2,.2)}
 #menuToggle input:checked~span:nth-last-child(2){transform:rotate(-45deg) translate(0,-1px)}
-#menuToggle input:checked~ul{transform:none} */
+#menuToggle input:checked~ul{transform:none}
 
 #nav { display:none; left: 0px; height: 80px; background-color: #000000; width: 100%; text-align: center; }
 #nav ul { margin: 0; padding: 0; display: inline-block; }
@@ -34,14 +34,15 @@ img { width: 100%; height: auto; }
 #nav img { width:60px;}
 #nav ul li.nav__icon { padding-top:0px; }
 
-#main {padding:20px;}
+#main {padding:20px; padding-bottom:200px;}
 #main p {text-align:left;line-height:1.5em;padding-bottom: 20px;font-size:14px;}
 #main h1 {text-align:center;}
 #main .img-txt__block {display:flex; flex-wrap:wrap; margin:0 auto; justify-content: center; max-width: 800px;}
-#main .img-text__block--image {width: 100%; max-width: 300px; margin: 0 20px;}
-#main .img-text__block--text-wrap {width:100%; max-width: 300px; text-align:left;}
+#main .img-text__block--image {width: 100%; margin: 0 20px;}
+#main .img-text__block--text-wrap {width:100%; text-align:left; margin: 20px;}
 #main .img-text__block--text-header {font-size:24px;}
-#main .img-text__block--text-body {font-size:14px;}
+#main .img-text__block--text-body {font-size:14px;line-height:20px;}
+#main .img-text__block--text-wrap hr { width:50%; margin:10px 0; border-color:red; }
 
 .parallax img { min-width:580px; }
 .darken:after { content: ""; display: block; width: 100%; height: 100%; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); position: absolute; z-index: 0; }
@@ -57,10 +58,15 @@ header .container { padding:0; width: 100%; height: 300px; display: flex; flex-d
 @media only screen and (min-width:600px) {
 }
 
+@media only screen and (min-width:700px) {
+  #main .img-text__block--image  {max-width: 300px;}
+  #main .img-text__block--text-wrap {max-width: 300px; margin:0;}
+}
+
 @media only screen and (min-width: 768px) {
   .container { width: 750px; }
   header .container {height:400px;}
-  /* #menuToggle {display: none;} */
+  #menuToggle {display: none;}
   #nav { display:block; }
   #main .img-text__block--text-wrap {max-width:400px;}
 }

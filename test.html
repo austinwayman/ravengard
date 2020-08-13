@@ -54,25 +54,29 @@
     </div>
     <div class="sideNavMenuWrapper">
         <div id="leftmenu">
-            <div class="sidebar-left__logo"><img src="./images/CircleITLogo.svg" alt="CircleIT Logo" /></div>
-            <div class="sidebar-left__image"><img src="./images/ManwBoxes.png" alt="Guy with cart" /></div>
+            <div class="sidebar-left__logo"><a href="/"><img src="https://cdn.shopify.com/s/files/1/0275/8292/2857/t/2/assets/CircleITLogo.svg?v=15378061699363350641" alt="CircleIT Logo" /></a></div>
+            <div class="sidebar-left__image"><img src="https://cdn.shopify.com/s/files/1/0275/8292/2857/files/ManwBoxes.png?v=1597245530" alt="Guy with cart" /></div>
         </div><!--
 
         --><div id="menu">
-            <div class="sidebar__section">
-                <img src="./images/icon-sustainable.svg" alt="sustainable icon">
-                <div class="sidebar__headline"><a href="/sustainable">Sustainable</a></div>
-                <div class="sidebar__body">Giving used devices a new purpose</div>
-            </div>
-            <div class="sidebar__section">
-                <img src="./images/icon-lock.svg" alt="secure icon">
-                <div class="sidebar__headline"><a href="/secure">Secure</a></div>
-                <div class="sidebar__body">Guardians of your data</div>
-            </div>
-            <div class="sidebar__section">
-                <img src="./images/icon-read.svg" alt="Simple icon">
-                <div class="sidebar__headline"><a href="/simple">Simple</a></div>
-                <div class="sidebar__body">Now the right thing is the easy thing</div>
+            <div>
+                <div class="sidebar__section">
+                    <img src="https://cdn.shopify.com/s/files/1/0275/8292/2857/files/icon-sustainable.svg?v=1595906974" alt="sustainable icon">
+                    <div class="sidebar__headline"><a href="/pages/sustainable">Sustainable</a></div>
+                    <div class="sidebar__body">Giving used devices a new purpose</div>
+                </div>
+                <div class="sidebar__section">
+                    <img src="https://cdn.shopify.com/s/files/1/0275/8292/2857/files/icon-lock.svg?v=1595517777" alt="secure icon">
+                    <div class="sidebar__headline"><a href="/pages/secure">Secure</a></div>
+                    <div class="sidebar__body">Guardians of your data</div>
+                </div>
+                <div class="sidebar__section">
+                    <img src="https://cdn.shopify.com/s/files/1/0275/8292/2857/files/icon-read.svg?v=1595517777" alt="Simple icon">
+                    <div class="sidebar__headline"><a href="/pages/simple">Simple</a></div>
+                    <div class="sidebar__body">Now the right thing is the easy thing</div>
+                </div>
+                <p><a href="/collections/devices" class="imgbtnlnk">CIRCLE IT <img src="https://cdn.shopify.com/s/files/1/0275/8292/2857/files/buttonCTA_2x_332960d4-29d1-4895-b412-e5b07dbae2e3.png?607" alt="CIRCLE IT" class="imgbtn" /></a></p>
+
             </div>
         </div>
     </div>
@@ -136,41 +140,63 @@
 
 
 <style>
-html {  box-sizing: border-box; } 
-*, *:before, *:after {  box-sizing: inherit; }
+/* html {  box-sizing: border-box; } 
+*, *:before, *:after {  box-sizing: inherit; } */
+
 body { overflow-x: hidden; }
-#menuToggle { display: block; position: absolute; top: -2px; right: 10px; width:100%; padding-right:40px; padding-top:60px; text-align:-webkit-right; z-index: 101; -webkit-user-select: none; user-select: none; }
-#menuToggle input { display: block; position: absolute; width: 40px; height: 32px; top: 50px; left: auto; right:32px; cursor: pointer; opacity: 0; z-index: 2; -webkit-touch-callout: none; }
-#menuToggle span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #cdcdcd; border-radius: 3px; z-index: 1; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; }
-#menuToggle span:first-child { transform-origin: 0% 0%; }
-#menuToggle span:nth-last-child(2) { transform-origin: 0% 100%; }
-#menuToggle input:checked ~ span { opacity: 1; transform: rotate(45deg) translate(-2px, -1px); background: #C3D3DC; }
-#menuToggle input:checked ~ span:nth-child(4) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); }
-#menuToggle input:checked ~ span:nth-child(3) { opacity: 1; transform: rotate(-45deg) translate(-6px, 5px); }
-#menu div img { height:34px; width:auto; }
-#menu .sidebar__section {padding: 50px 0;}
-#menu .sidebar__headline a { font-family:'Lato-semibold', Arial, sans-serif; text-transform: uppercase; color: #FFFFFF; font-size:32px; text-decoration: none; transition: color 0.3s ease; line-height:56px; }
+#menuToggle { display: flex; justify-content:flex-end; position: absolute; top: -2px; right: 10px; width:80px; padding-right:40px; padding-top:64px; text-align:-webkit-right; z-index: 101; -webkit-user-select: none; user-select: none; }
+#menuToggle input { display: block; position: absolute; width: 40px; height: 32px; top: 60px; left: auto; right:32px; cursor: pointer; opacity: 0; z-index: 2; -webkit-touch-callout: none; }
+#menuToggle div span { display: block; width: 33px; height: 4px; margin-bottom: 5px; position: relative; background: #cdcdcd; border-radius: 3px; z-index: 1; transform-origin: 4px 0px; transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease; }
+#menuToggle div span:first-child { transform-origin: 0% 0%; }
+#menuToggle div span:nth-last-child(2) { transform-origin: 0% 100%; }
+#menuToggle input:checked ~ div span { opacity: 1; -webkit-transform: rotate(45deg) translate(-2px, -1px);transform: rotate(45deg) translate(-2px, -1px); background: #C3D3DC; }
+#menuToggle input:checked ~ div span:nth-child(3) { opacity: 0; transform: rotate(0deg) scale(0.2, 0.2); -webkit-transform: rotate(0deg) scale(0.2, 0.2); }
+#menuToggle input:checked ~ div span:nth-child(2) { opacity: 1; -webkit-transform: rotate(-45deg) translate(-9px, 7px);transform: rotate(-45deg) translate(-9px, 7px); }
+#menu div .sidebar__section img { height:34px; width:auto; }
+#menu .sidebar__section {padding: 20px 0;}
+#menu .sidebar__headline a { font-family:'Lato-semibold', Arial, sans-serif; text-transform: uppercase; color: #FFFFFF; font-size:32px; text-decoration: none; transition: color 0.3s ease; line-height:45px; }
 #menu .sidebar__headline a:hover { color: tomato; }
 #menu .sidebar__body { color: #85A9BE; font-size:16px; font-family:'Lato', Arial, sans-serif; }
-#menu { display:inline-block; width: 100%; height:100vh; padding: 50px; padding-top: 92px; text-align:center; background: #215F82; list-style-type: none; -webkit-font-smoothing: antialiased; transform-origin: 0% 0%; transform: translate(100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); }
-#leftmenu { display:none; text-align:center; width: 70%; height:100vh; padding-top: 60px; background: #CDF3E2; list-style-type: none; -webkit-font-smoothing: antialiased; transform-origin: 0% 0%; transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); }
+#menu .imgbtnlnk {margin:0 auto;}
+#menu { display:inline-block; width: 100%; height:100%; padding: 30px; padding-top: 92px; text-align:center; background: #215F82; list-style-type: none; -webkit-font-smoothing: antialiased; transform-origin: 0% 0%; transform: translate(100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); }
+#leftmenu { display:none; text-align:center; width: 60%; height:100vh; padding-top: 60px; background: #CDF3E2; list-style-type: none; -webkit-font-smoothing: antialiased; transform-origin: 0% 0%; -webkit-transform: translate(-100%, 0); transform: translate(-100%, 0); transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0); }
 #leftmenu .sidebar-left__logo img { width:100%; max-width:300px;}
 #leftmenu .sidebar-left__image img { width:100%; max-width:300px; padding-left: 60px;}
 #leftmenu .sidebar-left__image { padding-top:100px; }
-#menuToggle input:checked ~ div { transform: scale(1.0, 1.0) !important; opacity: 1 !important; }
+#menuToggle input:checked ~ div { -webkit-transform: scale(1.0, 1.0) !important; transform: scale(1.0, 1.0) !important; opacity: 1 !important; }
 .visible {display:block !important;}
-.sideNavMenuWrapper { width:100%; max-width:100%; overflow:hidden; position:absolute; z-index:100; }
+.sideNavMenuWrapper { width:100%; height: 100%; max-width:100%; overflow:hidden; position:absolute; z-index:100; pointer-events: none;}
+.transform-toggle {transform:none !important; pointer-events: all;}
+#menu .imgbtn {max-width:300px; width:100%; }
+#menu p { padding-top:10px; }
+.overflow__hidden {overflow:hidden;}
 
-.transform-toggle {transform:none !important;}
+@media only screen and (max-width: 320px) {
+    #menu .sidebar__section { padding: 20px 0 10px; }
+    #menu { padding:10px; padding-top: 80px;}
+    #menuToggle {padding-right: 20px;}
+}
+@media only screen and (min-width: 321px) {
+    #menu p { padding-top:50px; }
+}
+@media only screen and (min-width: 480px) {
+	#menuToggle { padding-right:40px; }
+    #menu { padding: 50px 20px; }
+}
 @media only screen and (min-width: 600px) {
     #leftmenu .sidebar-left__image img { max-width:300px; }
-    #leftmenu {display:inline-block;}
-    #menu { width:30%; text-align:left; }
-    #menuToggle { padding-right:100px; }
-    #menuToggle input {right:92px;}
 }
 @media only screen and (min-width: 768px) {
+    #menu .imgbtnlnk {margin:inherit; max-width:100%;}
+    #leftmenu {display:inline-block; position:relative; }
+    #menu { width:40%; text-align:left; position:absolute;height:100vh; padding:50px 20px;}
+    #menuToggle input {right:45px;}
     #leftmenu .sidebar-left__image img { max-width:400px; }
+    #menu .sidebar__section {padding: 40px 0;}
+    #menu .imgbtn {max-width:350px;}
+}
+@media only screen and (min-width: 900px) {
+    #menu {padding:50px;}
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -179,12 +205,15 @@ body { overflow-x: hidden; }
 document.getElementById('menuToggleCheckbox').addEventListener('click', function () {
     var rightMenu = document.getElementById('menu');
     var leftMenu = document.getElementById('leftmenu');
+    var pageContainer = document.getElementById('PageContainer');
     if(rightMenu.classList.contains('transform-toggle')) {
         rightMenu.classList.remove('transform-toggle');
         leftMenu.classList.remove('transform-toggle');
+        pageContainer.classList.remove('overflow__hidden');
     } else {
         rightMenu.classList.add('transform-toggle');
         leftMenu.classList.add('transform-toggle');
+        pageContainer.classList.add('overflow__hidden');
     }
 });
 </script>
