@@ -20,10 +20,10 @@
         <span></span>
         <ul id="menu">
         <a href="index.html"><li>home</li></a>
-        <a href="#"><li>library</li></a>
+        <!-- <a href="#"><li>library</li></a> -->
         <a href="characters.html"><li>characters</li></a>
-        <a href="#"><li>bounty board</li></a>
-        <a href="#"><li>map</li></a>
+        <!-- <a href="#"><li>bounty board</li></a> -->
+        <!-- <a href="#"><li>map</li></a> -->
         </ul>
     </div>
 
@@ -48,58 +48,85 @@
 <div id="main" class='container'>
     <h1 class="underline">Characters</h1>
     
+    <!-- Character Cards -->
    <div class="characters__cards--wrapper">
-        <div class="characters__card"><a id="">
+        <div class="characters__card"><a id="" class="trigger" data-modal="bhalasar">
             <div class="characters__card--image"><img src="./images/bhalasar.JPG" alt="Bhalasar Lumiroth"></div>
             <div class="characters__card--text">
                 <div class="characters__card--title">Bhalasar Lumiroth</div>
-                <div class="characters__card--subtitle">Dragonborn Fighter</div>
+                <div class="characters__card--subtitle">Dragonborn Eldritch Knight</div>
             </div></a>
         </div>
-        <div class="characters__card"><a id="myBtn">
+        <div class="characters__card"><a id="" class="trigger" data-modal="boris">
             <div class="characters__card--image"><img src="./images/boris.JPG" alt="Boris Ironhide"></div>
             <div class="characters__card--text">
                 <div class="characters__card--title">Boris Ironhide</div>
-                <div class="characters__card--subtitle">Warforged Cleric</div>
+                <div class="characters__card--subtitle">Warforged War Cleric</div>
             </div></a>
         </div>
-        <div class="characters__card"><a id="">
+        <div class="characters__card"><a id="" class="trigger" data-modal="brea">
             <div class="characters__card--image"><img src="./images/brea.JPG" alt="Brea Sylvasapiens"></div>
             <div class="characters__card--text">
                 <div class="characters__card--title">Brea Sylvasapiens</div>
                 <div class="characters__card--subtitle">Plant-Person Druid</div>
             </div></a>
         </div>
-       <div class="characters__card"><a id="">
+       <div class="characters__card"><a id="" class="trigger" data-modal="kade">
             <div class="characters__card--image"><img src="./images/kade.JPG" alt="Kade Quickfoot"></div>
             <div class="characters__card--text">
                 <div class="characters__card--title">Kade Quickfoot</div>
                 <div class="characters__card--subtitle">Tiefling Warlock</div>
             </div></a>
         </div>
-        <div class="characters__card"><a id="">
+        <div class="characters__card"><a id="" class="trigger" data-modal="qidan">
             <div class="characters__card--image"><img src="./images/qidan.JPG" alt="Qidan"></div>
             <div class="characters__card--text">
                 <div class="characters__card--title">Qidan</div>
                 <div class="characters__card--subtitle">Wood Elf Ranger</div>
             </div></a>
         </div>
-        <div class="characters__card"><a id="">
+        <div class="characters__card"><a id="" class="trigger" data-modal="vondal">
             <div class="characters__card--image"><img src="./images/vondal.JPG" alt="Vondal Giantslayer"></div>
             <div class="characters__card--text">
-                <div class="characters__card--title">Boris Ironhide</div>
+                <div class="characters__card--title">Vondal Giantslayer</div>
                 <div class="characters__card--subtitle">Mountain Dwarf Fighter</div>
             </div></a>
         </div>
    </div>
 
-    <div id="myModal" class="modal">
+   <!-- Character Modals -->
+    <div class="modal" id="bhalasar">
+        <div class="modal__wrapper">
+        <span class="close"></span>
+            <div class="modal__image"><img src="./images/bhalasar.JPG" alt="Bhalasar Lumiroth" /></div>
+            <div class="modal__text--wrapper">
+                <div class="modal__text--header">Bhalasar Lumiroth</div>
+                <div class="modal__text--subheader">Dragonborn Eldritch Knight (5)</div>
+                <hr>
+                <div class="modal__text--stats-wrapper">
+                    <div class="modal__text--stat">STR<br><span>16</span></div>
+                    <div class="modal__text--stat">DEX<br><span>10</span></div>
+                    <div class="modal__text--stat">CON<br><span>14</span></div>
+                    <div class="modal__text--stat">INT<br><span>15</span></div>
+                    <div class="modal__text--stat">WIS<br><span>9</span></div>
+                    <div class="modal__text--stat">CHA<br><span>10</span></div>
+                    <div class="modal__text--stat spacer"></div>
+                    <div class="modal__text--stat">HP<br><span>45</span></div>
+                    <div class="modal__text--stat">AC<br><span>18</span></div>
+                </div>
+                <div class="modal__text--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <br>
+                <div class="modal__text--body-quote"><em>"Wait, what's happening?" - Bhalasar</em></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="boris">
         <div class="modal__wrapper">
         <span class="close"></span>
             <div class="modal__image"><img src="./images/boris.JPG" alt="Boris Ironhide" /></div>
             <div class="modal__text--wrapper">
                 <div class="modal__text--header">Boris Ironhide</div>
-                <div class="modal__text--subheader">Warforged War Cleric - Neutral Good</div>
+                <div class="modal__text--subheader">Warforged War Cleric (8)</div>
                 <hr>
                 <div class="modal__text--stats-wrapper">
                     <div class="modal__text--stat">STR<br><span>14</span></div>
@@ -108,10 +135,113 @@
                     <div class="modal__text--stat">INT<br><span>9</span></div>
                     <div class="modal__text--stat">WIS<br><span>18</span></div>
                     <div class="modal__text--stat">CHA<br><span>10</span></div>
+                    <div class="modal__text--stat spacer"></div>
+                    <div class="modal__text--stat">HP<br><span>79</span></div>
+                    <div class="modal__text--stat">AC<br><span>22</span></div>
                 </div>
                 <div class="modal__text--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 <br>
                 <div class="modal__text--body-quote"><em>"I love gold." - Boris</em></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="brea">
+        <div class="modal__wrapper">
+        <span class="close"></span>
+            <div class="modal__image"><img src="./images/brea.JPG" alt="Brea Sylvasapiens" /></div>
+            <div class="modal__text--wrapper">
+                <div class="modal__text--header">Brea Sylvasapiens</div>
+                <div class="modal__text--subheader">Plant-Person Circle of Dreams Druid (7)</div>
+                <hr>
+                <div class="modal__text--stats-wrapper">
+                    <div class="modal__text--stat">STR<br><span>12</span></div>
+                    <div class="modal__text--stat">DEX<br><span>12</span></div>
+                    <div class="modal__text--stat">CON<br><span>14</span></div>
+                    <div class="modal__text--stat">INT<br><span>12</span></div>
+                    <div class="modal__text--stat">WIS<br><span>16</span></div>
+                    <div class="modal__text--stat">CHA<br><span>9</span></div>
+                    <div class="modal__text--stat spacer"></div>
+                    <div class="modal__text--stat">HP<br><span>50</span></div>
+                    <div class="modal__text--stat">AC<br><span>11</span></div>
+                </div>
+                <div class="modal__text--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <br>
+                <div class="modal__text--body-quote"><em>"Wanna bang?" - Brea</em></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="kade">
+        <div class="modal__wrapper">
+        <span class="close"></span>
+            <div class="modal__image"><img src="./images/kade.JPG" alt="Kade Quickfoot" /></div>
+            <div class="modal__text--wrapper">
+                <div class="modal__text--header">Kade Quickfoot</div>
+                <div class="modal__text--subheader">Tiefling Hexblade Warlock (8)</div>
+                <hr>
+                <div class="modal__text--stats-wrapper">
+                    <div class="modal__text--stat">STR<br><span>14</span></div>
+                    <div class="modal__text--stat">DEX<br><span>10</span></div>
+                    <div class="modal__text--stat">CON<br><span>16</span></div>
+                    <div class="modal__text--stat">INT<br><span>9</span></div>
+                    <div class="modal__text--stat">WIS<br><span>18</span></div>
+                    <div class="modal__text--stat">CHA<br><span>10</span></div>
+                    <div class="modal__text--stat spacer"></div>
+                    <div class="modal__text--stat">HP<br><span>78</span></div>
+                    <div class="modal__text--stat">AC<br><span>17</span></div>
+                </div>
+                <div class="modal__text--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <br>
+                <div class="modal__text--body-quote"><em>"I got horns, see?" - Kade</em></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="qidan">
+        <div class="modal__wrapper">
+        <span class="close"></span>
+            <div class="modal__image"><img src="./images/qidan.JPG" alt="Qidan" /></div>
+            <div class="modal__text--wrapper">
+                <div class="modal__text--header">Qidan</div>
+                <div class="modal__text--subheader">Wood Elf Hunter Ranger (6)</div>
+                <hr>
+                <div class="modal__text--stats-wrapper">
+                    <div class="modal__text--stat">STR<br><span>10</span></div>
+                    <div class="modal__text--stat">DEX<br><span>16</span></div>
+                    <div class="modal__text--stat">CON<br><span>12</span></div>
+                    <div class="modal__text--stat">INT<br><span>10</span></div>
+                    <div class="modal__text--stat">WIS<br><span>16</span></div>
+                    <div class="modal__text--stat">CHA<br><span>11</span></div>
+                    <div class="modal__text--stat spacer"></div>
+                    <div class="modal__text--stat">HP<br><span>48</span></div>
+                    <div class="modal__text--stat">AC<br><span>13</span></div>
+                </div>
+                <div class="modal__text--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <br>
+                <div class="modal__text--body-quote"><em>"Elf stuff" - Qidan</em></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="vondal">
+        <div class="modal__wrapper">
+        <span class="close"></span>
+            <div class="modal__image"><img src="./images/vondal.JPG" alt="Vondal Giantslayer" /></div>
+            <div class="modal__text--wrapper">
+                <div class="modal__text--header">Vondal Giantslayer</div>
+                <div class="modal__text--subheader">Mountain Dwarf Battle Master Fighter (7)</div>
+                <hr>
+                <div class="modal__text--stats-wrapper">
+                    <div class="modal__text--stat">STR<br><span>18</span></div>
+                    <div class="modal__text--stat">DEX<br><span>10</span></div>
+                    <div class="modal__text--stat">CON<br><span>18</span></div>
+                    <div class="modal__text--stat">INT<br><span>9</span></div>
+                    <div class="modal__text--stat">WIS<br><span>10</span></div>
+                    <div class="modal__text--stat">CHA<br><span>12</span></div>
+                    <div class="modal__text--stat spacer"></div>
+                    <div class="modal__text--stat">HP<br><span>72</span></div>
+                    <div class="modal__text--stat">AC<br><span>20</span></div>
+                </div>
+                <div class="modal__text--body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                <br>
+                <div class="modal__text--body-quote"><em>"...and my axe." - Vondal</em></div>
             </div>
         </div>
     </div>
@@ -122,69 +252,6 @@
 
 </body>
 
-
-<style>
-
-header {position:relative;}
-.characters__cards--wrapper { display:flex; flex-wrap:wrap; justify-content: center; }
-.characters__cards--wrapper a { text-decoration:none; color: whitesmoke; cursor:pointer;}
-.characters__card--image {height:300px;}
-.characters__card { width: 100%; max-width: 300px; margin: 10px; border: 3px solid whitesmoke; -webkit-transition: all .1s ease-out; -o-transition: all .1s ease-out; -webkit-transition: all .2s ease-out; -o-transition: all .2s ease-out; transition: all .2s ease-out; }
-.characters__card:hover {opacity:0.7;}
-.characters__card--text {padding:5px;}
-.characters__card--title { font-weight: 600; font-size: 20px; line-height: 24px; }
-
-.modal__wrapper {background: rgb(0,0,0,0.8); animation-duration: 0.4s; top: 20vh; position: relative; display:flex;padding:10px; border:7px double whitesmoke; text-align:left;max-width:1000px; margin:0 auto;}
-.modal__image {width: 50%;}
-.modal__text--wrapper {width: 50%;padding:10px;}
-.modal__text--stats-wrapper { display:flex; flex-wrap:wrap; }
-.modal__text--header {font-size:32px;line-height:1.5em; font-weight:600; letter-spacing: 1px;}
-.modal__text--subheader {font-size:18px; line-height:1.5em;}
-.modal__text--wrapper hr { width:50%; margin:10px 0; border-color:red; border-width:2px; border-style:outset; }
-.modal__text--stat { text-align: center; margin: 5px 20px 5px 0; font-size:12px; }
-.modal__text--stat span { font-size:20px; }
-.modal__text--body { line-height: 1.5em; }
-
-.modal__wrapper .close { position: absolute; right: 5px; top: 5px; width: 32px; height: 32px; opacity: 0.6; -webkit-transition: all .1s ease-out; -o-transition: all .1s ease-out; -webkit-transition: all .2s ease-out; -o-transition: all .2s ease-out; transition: all .2s ease-out; }
-.modal__wrapper .close:hover { opacity: 1; cursor:pointer; }
-.modal__wrapper .close:before, .close:after { position: absolute; left: 15px; content: ' '; height: 26px; width: 2px; background-color: #FFF; }
-.modal__wrapper .close:before { transform: rotate(45deg); }
-.modal__wrapper .close:after { transform: rotate(-45deg); }
-
-
-/* The Modal (background) */
-.modal { display: none; position: fixed; z-index: 1;   left: 0; top: 0; width: 100%;  height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.8); -webkit-animation-name: fadeIn; -webkit-animation-duration: 0.4s; animation-name: fadeIn; animation-duration: 0.4s; }
-
-@-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
-}
-
-</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./scripts/scripts.js"></script>
-<script>
-
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-</script>
 </html>
