@@ -13,12 +13,12 @@ var xy = function(x, y) {
 
 var redIcon = L.icon({
     iconUrl: './images/marker-icon-red.png',
-    // shadowUrl: 'leaf-shadow.png',
+    shadowUrl: './images/map-marker-shadow.png',
 
     iconSize:     [25, 40], // size of the icon
-    // shadowSize:   [50, 64], // size of the shadow
+    shadowSize:   [40, 50], // size of the shadow
     iconAnchor:   [15, 40], // point of the icon which will correspond to marker's location
-    // shadowAnchor: [4, 62],  // the same for the shadow
+    shadowAnchor: [18, 50],  // the same for the shadow
     popupAnchor:  [-3, -40] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -39,16 +39,16 @@ var brinhd    = xy(605.0, 605.0);
 var frostgate = xy(555.0, 642.0);
 var sanctuaryofeternallight = xy(530.0, 710.0);
 
-L.marker(baggister, {icon: redIcon}).addTo(mymap).bindPopup('Baggister');
-L.marker( valtorek, {icon: redIcon}).addTo(mymap).bindPopup('Val Torek');
-L.marker(beachfort, {icon: redIcon}).addTo(mymap).bindPopup('Beachfort');
-L.marker(     lise, {icon: redIcon}).addTo(mymap).bindPopup(     'Lise');
-L.marker(   fallia, {icon: redIcon}).addTo(mymap).bindPopup(   'Fallia');
-L.marker(    vaela, {icon: redIcon}).addTo(mymap).bindPopup(    'Vaela');
-L.marker(    sunia, {icon: redIcon}).addTo(mymap).bindPopup(    'Sunia');
-L.marker(   brinhd, {icon: redIcon}).addTo(mymap).bindPopup(   'Brinhd');
-L.marker(frostgate, {icon: redIcon}).addTo(mymap).bindPopup('Frostgate');
-L.marker(sanctuaryofeternallight, {icon: redIcon}).addTo(mymap).bindPopup('Sanctuary of Eternal Light');
+L.marker(baggister, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Baggister</h3>');
+L.marker( valtorek, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Val Torek</h3>');
+L.marker(beachfort, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Beachfort</h3>');
+L.marker(     lise, {icon: redIcon}).addTo(mymap).bindPopup(     '<h3>Lise</h3>');
+L.marker(   fallia, {icon: redIcon}).addTo(mymap).bindPopup(   '<h3>Fallia</h3>');
+L.marker(    vaela, {icon: redIcon}).addTo(mymap).bindPopup(    '<h3>Vaela</h3>');
+L.marker(    sunia, {icon: redIcon}).addTo(mymap).bindPopup(    '<h3>Sunia</h3>');
+L.marker(   brinhd, {icon: redIcon}).addTo(mymap).bindPopup(   '<h3>Brinhd</h3>');
+L.marker(frostgate, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Frostgate</h3>');
+L.marker(sanctuaryofeternallight, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Sanctuary of Eternal Light</h3>');
 
 // var travel = L.polyline([sol, deneb]).addTo(mymap);
 
