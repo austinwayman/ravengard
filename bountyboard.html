@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/llm8wjv.css">
+
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -51,7 +53,7 @@
 </header>
 
 <div id="main" class='container'>
-    <h1 class="underline">Bounty Board</h1>
+    <h1 class="underline" style="">Bounty Board</h1>
      <div class="tabs">
         <input name="tabs" type="radio" id="tab-1" checked="checked" class="input"/>
         <label for="tab-1" class="label">Active</label>
@@ -157,7 +159,7 @@
 <style>
 .tabs {display: flex;flex-wrap: wrap; justify-content: center;max-width: 100%; box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);}
 .input { position: absolute; opacity: 0; }
-.label { width: 100%;padding: 20px 30px;cursor: pointer;font-weight: bold; font-size: 18px; border: 1px solid #000; color: #7f7f7f; transition: background 0.1s, color 0.1s; }
+.label { width: 100%;padding: 20px 30px;cursor: pointer;font-size: 18px; border: 1px solid #000; color: #7f7f7f; transition: background 0.1s, color 0.1s; }
 .label:hover { border:1px solid #d8d8d8; }
 .label:active { border:1px solid #d8d8d8; }
 .input:focus + .label { z-index: 1; }
@@ -165,6 +167,8 @@
 .input:checked + .label + .panel { display: block; }
 .panel { display: none;  padding: 10px; }
 .panel hr { width: 75%; margin: 0 auto; margin-top: 20px;  margin-bottom: 40px;}
+#main h1, #main h2, #main h3 {font-weight:normal;}
+#main p {font-size:16px;}
 
 @media (min-width: 600px) {
   .label {  width: auto; }
