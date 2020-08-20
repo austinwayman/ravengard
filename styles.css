@@ -68,7 +68,7 @@ header {position:relative;}
 .modal__text--header {font-size:32px;letter-spacing: 1px; padding:10px 0;}
 .modal__text--subheader {font-size:18px; line-height:1.5em;}
 .modal__text--wrapper hr { width:50%; margin:10px 0; border-color:red; border-width:2px; border-style:outset; }
-.modal__text--stat { text-align: center; margin: 5px 20px 5px 0; font-size:12px; }
+.modal__text--stat { text-align: center; margin: 5px 22px 5px 0; font-size:12px; }
 .modal__text--stat span { font-size:20px; }
 .modal__text--body { line-height: 1.5em; }
 
