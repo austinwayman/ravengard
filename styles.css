@@ -84,7 +84,7 @@ header {position:relative;}
 
 
 .parallax img { min-width:580px; }
-.darken:after { content: ""; display: block; width: 100%; height: 100%; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); position: absolute; z-index: 0; }
+.darken:after { content: ""; display: block; width: 100%; height: 100%; top: 0; left: 0; bottom: 0; right: 0; background-color: rgba(0, 0, 0, 0.3); position: absolute; z-index: 0; }
 header .container { padding:0; width: 100%; height: 300px; display: flex; flex-direction: column; align-content: center; align-items: center; justify-content: space-around; overflow:hidden; }
 .container { text-align:center; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
 .underline { display:inline-block; border-bottom:1px solid currentColor; line-height:1.15; }
