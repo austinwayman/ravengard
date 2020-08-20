@@ -3,13 +3,13 @@ var bounds = [[0,0], [900,1150]];
 var image = L.imageOverlay('./images/ravengard_map.jpg', bounds).addTo(mymap);
 var yx = L.latLng;
 
+// flips lat/long and makes it reusable
 var xy = function(x, y) {
     if (L.Util.isArray(x)) {    // When doing xy([x, y]);
         return yx(x[1], x[0]);
     }
     return yx(y, x);  // When doing xy(x, y);
 };
-
 
 var redIcon = L.icon({
     iconUrl: './images/marker-icon-red.png',
@@ -21,11 +21,6 @@ var redIcon = L.icon({
     shadowAnchor: [18, 50],  // the same for the shadow
     popupAnchor:  [-3, -40] // point from which the popup should open relative to the iconAnchor
 });
-
-
-
-
-
 
 // LOCATIONS
 var baggister = xy(730.0, 165.0);
@@ -50,7 +45,10 @@ L.marker(   brinhd, {icon: redIcon}).addTo(mymap).bindPopup(   '<h3>Brinhd</h3>'
 L.marker(frostgate, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Frostgate</h3>');
 L.marker(sanctuaryofeternallight, {icon: redIcon}).addTo(mymap).bindPopup('<h3>Sanctuary of Eternal Light</h3>');
 
-// var travel = L.polyline([sol, deneb]).addTo(mymap);
+// USE TO ADD LINE FROM 2 POINTS!
+// var travel = L.polyline([sol, deneb]).addTo(mymap)
+
+;
 
 //     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -62,3 +60,11 @@ L.marker(sanctuaryofeternallight, {icon: redIcon}).addTo(mymap).bindPopup('<h3>S
 // }).addTo(mymap);
 
 mymap.fitBounds(bounds);
+
+
+// USE TO FIND MAP POSITION WHEN CLICKED!
+// function onMapClick(e) {
+//     alert("You clicked the map at " + e.latlng);
+// }
+
+// mymap.on('click', onMapClick);
